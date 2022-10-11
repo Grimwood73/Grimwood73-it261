@@ -28,7 +28,7 @@
             of all kinds, movies, writing stories, and roleplaying games. I'm back in school
             after about 10 years to learn some new skills and get in to web development.
         </p>
-        <img id="bio_img" src="bio_headshot.png" alt="photo of Jonah">
+        <img id="bio_img" src="images/bio_headshot.png" alt="photo of Jonah">
         </main>
 
         <aside>
@@ -43,12 +43,26 @@
             </ul>
 
         </aside>
-        <screenshots>
-            <img class="screenshot" src="MAMP_screenshot.png" alt="screenshot of installed MAMP">
-            <img class="screenshot" src="error_reporting_screenshot.png" alt="screenshot of error reporting"> 
-        </screenshots>
+        <div>
+            <img class="screenshot" src="images/MAMP_screenshot.png" alt="screenshot of installed MAMP">
+            <img class="screenshot" src="images/error_reporting_screenshot.png" alt="screenshot of error reporting"> 
+        </div>
     </div>
     <!-- close wrapper -->
-
+<footer>
+    <ul>
+        <li>Copyright &copy;
+            2022</li>
+        <li>All Rights Reserved</li>
+        <li><a href="index.php">Web Design by Jonah Byrne</a></li>
+        <li><a id="html-checker" href="#">HTML Validation</a></li>
+        <li><a id="css-checker" href="#">CSS Validation</a></li>
+    </ul>
+        
+    <script>
+            document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+            document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+</footer>
 </body>
 </html>

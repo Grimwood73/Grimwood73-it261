@@ -52,6 +52,17 @@ aside{
     width:95%;
 }
 
+footer ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer li {
+    justify-content: center;
+    margin: 0 15px 0 15px;
+}
+
 /* typography */
 
 h1 {
