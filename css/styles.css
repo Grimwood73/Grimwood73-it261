@@ -1,0 +1,71 @@
+/* Styles for my portal page */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lavender;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+nav{
+    height: 60px;
+    background: lightseagreen;
+    line-height: 60px;
+    margin: 0 0 20px 0;
+}
+
+nav li {
+    float: left;
+    width: 16.66%;
+    text-align: center;
+    list-style-type: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    width: 62%;
+    float: left;
+}
+
+#bio_img {
+    width: 60%;
+}
+
+aside{
+    width: 35%;
+    float: right;
+}
+
+.screenshot{
+    width:95%;
+}
+
+/* typography */
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 20px 0 20px 0;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+main h2, aside h2 {
+    text-align: left;
+}
