@@ -13,7 +13,7 @@
     <div id="wrapper">
         <nav>
         <ul>
-            <li><a href="">Switch</a></li>
+            <li><a href="website/daily.php">Switch</a></li>
             <li><a href="">Troubleshoot</a></li>
             <li><a href="">Calculator</a></li>
             <li><a href="">Email</a></li>
@@ -40,6 +40,15 @@
                 <li><a href="weeks/week2/currency.php">Currency</a></li>
                 <li><a href="weeks/week2/currency-logic.php">Currency-Logic</a></li>
                 <li><a href="weeks/week2/heredoc.php">heredoc</a></li>
+            </ul>
+        <h3>Week 3</h3>
+            <ul>
+                <li><a href="weeks/week3/arrays.php">Arrays</a></li>
+                <li><a href="weeks/week3/date.php">Date</a></li>
+                <li><a href="weeks/week3/foor-loop.php">For-Loop</a></li>
+                <li><a href="weeks/week3/if.php">If</a></li>
+                <li><a href="weeks/week3/index.php">Index</a></li>
+                <li><a href="weeks/week3/switch.php">Switch</a></li>
             </ul>
 
         </aside>
