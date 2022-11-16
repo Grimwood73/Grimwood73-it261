@@ -73,6 +73,13 @@
                 <li><a href="weeks/week6/functions.php">Functions</a></li>
                 <li><a href="weeks/week6/thx.php">Thx</a></li>
             </ul>
+            <h3>Week 7</h3>
+            <ul>
+                <li><a href="weeks/week7/form3.php">Form 3</a></li>
+                <li><a href="weeks/week7/pictures.php">Pictures</a></li>
+                <li><a href="weeks/week7/strings.php">Strings</a></li>
+                <li><a href="weeks/week7/rand.php">Rand</a></li>
+            </ul>
         </aside>
         <div>
             <img class="screenshot" src="images/MAMP_screenshot.png" alt="screenshot of installed MAMP">
