@@ -104,21 +104,31 @@
             $gender = $_POST['gender'];
         }
 
+        // if(empty($_POST['phone'])){
+        //     $phone_err = 'Please enter your phone number';
+        // } else {
+        //     $phone = $_POST['phone'];
+        // }
 
-        if(empty($_POST['phone'])){
-            $phone_err = 'Please enter your phone number';
-        } else {
+        if(empty($_POST['phone'])) { // if empty, type in your number
+            $phone_err = 'Your phone number please!';
+        } elseif(array_key_exists('phone', $_POST)){
+            if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))
+            { // if you are not typing the requested format of xxx-xxx-xxxx, display Invalid format
+            $phone_err = 'Invalid format!';
+            } else{
             $phone = $_POST['phone'];
-        }
+            } // end else
+        } // end main if
 
         if(empty($_POST['wines'])){
-            $wines_err = 'What, no wines?';
+            $wines_err = 'What, no special powers?';
         } else {
             $wines = $_POST['wines'];
         }
 
         if(empty($_POST['comments'])){
-            $comments_err = 'Share your thoughts with us!';
+            $comments_err = 'Add some details to your character!';
         } else {
             $comments = $_POST['comments'];
         }
@@ -130,7 +140,7 @@
         }
 
         if($_POST['regions'] == NULL){
-            $regions_err = 'Select your region!';
+            $regions_err = 'Select your class!';
         } else {
             $regions = $_POST['regions'];
         }
@@ -158,7 +168,7 @@
         $_POST['regions'],
         $_POST['comments'],
         $_POST['privacy'])){
-            $to='jonah.byrne@gmail.com';
+            $to='oszemeo@mystudentswa.com';
             $subject = 'Test Email on ' .date('m/d/y, h i A');
             $body = '
                 First Name: '.$first_name.' '.PHP_EOL.'
@@ -176,11 +186,25 @@
             );
 
             if(!empty($first_name && $last_name && $email && $gender && $phone
-            && $regions && $wines && $comments)){
+            && $regions && $wines && $comments && 
+            preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))){
                 mail($to, $subject, $body, $headers);
                 header('Location:thx.php');
             }
         } //end isset
 
     } // end server request method
+
+    $photos[0] = 'photo1';
+    $photos[1] = 'photo2';
+    $photos[2] = 'photo3';
+    $photos[3] = 'photo4';
+    $photos[4] = 'photo5';
+
+    function random_images($photos){
+        $i = rand(0, 4);
+        $selected_image = ''.$photos[$i].'.jpg';
+        $my_return = '<img src="./images/'.$selected_image.'" alt="'.$photos[$i].'">';
+        return $my_return;
+    } // end function
 ?>
