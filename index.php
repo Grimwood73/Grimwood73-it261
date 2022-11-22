@@ -80,6 +80,10 @@
                 <li><a href="weeks/week7/strings.php">Strings</a></li>
                 <li><a href="weeks/week7/rand.php">Rand</a></li>
             </ul>
+            <h3>Week 8</h3>
+            <ul>
+                <li><a href="weeks/week8/people.php">People</a></li>
+            </ul>
         </aside>
         <div>
             <img class="screenshot" src="images/MAMP_screenshot.png" alt="screenshot of installed MAMP">

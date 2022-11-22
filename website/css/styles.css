@@ -91,6 +91,19 @@ img{
     max-width: 100%;
 }
 
+table{
+    border: 1px solid red;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid red;
+}
+
+img {
+    max-width: 400px;
+}
+
 /* form styles */
 
 form {
