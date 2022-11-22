@@ -46,7 +46,7 @@
 
             <label>Character Class</label>
             <select name="regions">
-                <option value="" NULL <?php 
+                <option value="" <?php 
                         if(isset($_POST['regions']) && $_POST['regions'] == NULL) 
                         echo 'selected = "unselected"';?>>Select One!
                 </option>

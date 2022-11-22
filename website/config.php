@@ -33,6 +33,11 @@
             $title = 'Gallery page of our Website Project';
             $body = 'gallery inner';
             break;
+
+        case 'thx.php':
+            $title = 'Thank you page of our Website Project';
+            $body = 'thx inner';
+            break;
     }
 
     $nav = array(
@@ -168,7 +173,7 @@
         $_POST['regions'],
         $_POST['comments'],
         $_POST['privacy'])){
-            $to='oszemeo@mystudentswa.com';
+            $to='szemeo@mystudentswa.com';
             $subject = 'Test Email on ' .date('m/d/y, h i A');
             $body = '
                 First Name: '.$first_name.' '.PHP_EOL.'
