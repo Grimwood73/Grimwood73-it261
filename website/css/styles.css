@@ -87,10 +87,6 @@ footer li {
     margin: 0 15px 0 15px;
 }
 
-img{
-    max-width: 100%;
-}
-
 table{
     border: 1px solid red;
     border-collapse: collapse;
@@ -103,6 +99,10 @@ td {
 img {
     max-width: 400px;
     margin: 10px;
+}
+
+.big_img {
+    max-width: 1000px;
 }
 
 /* form styles */
