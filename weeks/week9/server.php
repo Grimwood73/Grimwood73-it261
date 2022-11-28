@@ -9,7 +9,7 @@ include('config.php');
 
 //this server.php page will be communicating to our database!!!!
 
-$iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
+$iConn = mysqli_connect('DB_HOST', 'DB_USER', 'DB_PASSWORD', 'DB_NAME')
 // if we cannot connect to the database... we DIE
 or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 
