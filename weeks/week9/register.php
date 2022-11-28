@@ -13,7 +13,7 @@ include('server.php');
         value="<?php if(isset($_POST['first_name'])) 
         echo htmlspecialchars($_POST['first_name']);?>">
 
-        <label>First Name</label>
+        <label>Last Name</label>
         <input type="text" name="last_name" 
         value="<?php if(isset($_POST['last_name'])) 
         echo htmlspecialchars($_POST['last_name']);?>">
