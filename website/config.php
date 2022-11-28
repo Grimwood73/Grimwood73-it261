@@ -27,6 +27,11 @@
             $body = 'project inner';
             break;
 
+        case 'project-view.php':
+            $title = 'Project View page of our Website Project';
+            $body = 'project-view inner';
+            break;
+        
         case 'contact.php':
             $title = 'Contact page of our Website Project';
             $body = 'contact inner';
