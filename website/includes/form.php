@@ -64,7 +64,7 @@
                 <option value="mw" <?php 
                         if(isset($_POST['regions']) && $_POST['regions'] == 'mw') 
                         echo 'selected = "selected"';?>>Thief
-                </option>]
+                </option>
             </select>
             <span class="error"><?php echo $regions_err ;?></span>
 
