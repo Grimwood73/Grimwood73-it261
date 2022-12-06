@@ -75,7 +75,7 @@ if(isset($_POST['reg_user'])){
     } // close big $rows if
 
     // do we have any errors??? 
-    if(count($errors) === 0){
+    if(count($errors) == 0){
         $password = md5($password_1);
 
         // now we insert the information into our table
@@ -98,7 +98,7 @@ if(isset($_POST['login_user'])){
     $password = mysqli_real_escape_string($iConn, $_POST['password']);
 
     if(empty($username)){
-        array_push($errors, 'Username is required!!!');
+        array_push($errors, 'User name is required!!!');
     }
 
     if(empty($password)){
