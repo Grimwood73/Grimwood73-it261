@@ -63,6 +63,7 @@ include('./includes/header.php');
     <figure>
         <img src="./images/spaceship<?php echo $id;?>.jpg" 
         alt="<?php echo $name;?>">
+    </figure>
 </aside>
 
 <?php
